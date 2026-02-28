@@ -6,14 +6,7 @@ file_path = "qrcode.png"
 
 def main():
 
-    url = input("Enter the URL: ").strip()
-
-    if not url:
-        print("URL cannot be empty")
-        return 1
-    if not url.startswith("https://"):
-        print("URL must start with 'http://' or 'https://'")
-        return 1
+    url = "https://www.hemkop.se/recept/asia_tofu?gclsrc=aw.ds&gad_source=1&gad_campaignid=12258323741&gbraid=0AAAAADQyiMC-GmfUGQtpPlfoaJaMwb_Le&gclid=CjwKCAiA-__MBhAKEiwASBmsBNjFVeXRWnLjBeKaJt0t2s3Uu89Duc6uwNzwckCnsY7-5BYNbDMtEBoCCCQQAvD_BwE"
 
     try:
         qr_code = qrcode.QRCode()
